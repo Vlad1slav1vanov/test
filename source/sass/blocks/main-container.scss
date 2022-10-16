@@ -1,0 +1,11 @@
+.main-container {
+  width: 340px;
+
+  @media (min-width: 768px){
+    width: 710px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1100px;
+  }
+}

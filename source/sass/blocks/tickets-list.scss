@@ -1,0 +1,27 @@
+.tickets-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    grid-auto-rows: auto;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.tickets-list__ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
